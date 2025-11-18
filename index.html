@@ -3,113 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABSAT Dynamic Limited - Integrated Business Solutions</title>
+    <title>ABSAT Dynamic Limited - Transport & Haulage Services</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/service-card.js"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-50">
     <custom-navbar></custom-navbar>
-    
-    <main>
-        <!-- Hero Section with Vanta.js Globe -->
-        <section id="hero" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative z-10 text-center px-4">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Integrated Business Solutions</h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">ABSAT Dynamic Limited delivers excellence in telecommunications, logistics, agriculture and more across Nigeria</p>
-                <div class="flex gap-4 justify-center">
-                    <a href="#services" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition">Our Services</a>
-                    <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition">Contact Us</a>
+
+    <!-- Hero Section -->
+    <section class="relative bg-blue-600 text-white">
+        <div class="container mx-auto px-6 py-24 md:py-32">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Reliable Transport & Haulage Across Nigeria</h1>
+                <p class="text-xl mb-8">ABSAT Dynamic Limited provides safe, efficient, and timely transportation of goods nationwide with our modern fleet and professional team.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 text-center">Our Services</a>
+                    <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-600 font-semibold px-6 py-3 rounded-lg transition duration-300 text-center">Contact Us</a>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-1 -mb-8"></div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-20 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/2">
-                        <h2 class="text-3xl font-bold mb-6">About ABSAT Dynamic Limited</h2>
-                        <p class="text-gray-600 mb-4">A Nigerian registered company engaged in general trading, telecommunications, logistics, transport services and agriculture.</p>
-                        <p class="text-gray-600 mb-6">We provide comprehensive solutions tailored to meet the diverse needs of businesses and individuals across Nigeria.</p>
-                        <a href="/about.html" class="inline-flex items-center text-blue-600 font-medium">
-                            Learn more about us
-                            <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
-                        </a>
-                    </div>
-                    <div class="md:w-1/2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknGVHKXSW3uJ9TOMz_xBIEeCZjfLX7uHtBg&s" alt="ABSAT Dynamic Team" class="rounded-lg shadow-xl w-full">
-                    </div>
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknGVHKXSW3uJ9TOMz_xBIEeCZjfLX7uHtBg&s" alt="ABSAT Transport Services" class="rounded-lg shadow-xl w-full">
                 </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-12 text-center">Our Services</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Telecommunication -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                            <i data-feather="wifi" class="text-blue-600 w-6 h-6"></i>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-6">About ABSAT Dynamic Limited</h2>
+                    <p class="text-gray-700 mb-4">ABSAT Dynamic Limited is a Nigerian-registered company specializing in transport and haulage services across Nigeria. With years of experience in the industry, we've built a reputation for reliability and excellence.</p>
+                    <p class="text-gray-700 mb-6">Our modern fleet of vehicles and professional drivers ensure your goods are transported safely and efficiently to their destination, no matter where in Nigeria that may be.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-100 p-4 rounded-lg">
+                            <i data-feather="check-circle" class="text-blue-600 w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Telecommunications</h3>
-                        <p class="text-gray-600">Cutting-edge telecom solutions including network infrastructure, broadband services, and mobile solutions.</p>
-                    </div>
-                    
-                    <!-- Logistics -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                            <i data-feather="truck" class="text-blue-600 w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Logistics & Transport</h3>
-                        <p class="text-gray-600">Reliable and efficient logistics services including freight forwarding, warehousing, and distribution.</p>
-                    </div>
-                    
-                    <!-- Agriculture -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                            <i data-feather="cloud-rain" class="text-blue-600 w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Agricultural Solutions</h3>
-                        <p class="text-gray-600">Modern agricultural services including farm management, produce distribution, and agri-tech solutions.</p>
-                    </div>
-                    
-                    <!-- Trading -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                            <i data-feather="shopping-bag" class="text-blue-600 w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">General Trading</h3>
-                        <p class="text-gray-600">Comprehensive trading services connecting businesses with quality products and suppliers.</p>
-                    </div>
-                    
-                    <!-- Consulting -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                            <i data-feather="briefcase" class="text-blue-600 w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Business Consulting</h3>
-                        <p class="text-gray-600">Strategic consulting services to help businesses grow and optimize operations.</p>
-                    </div>
-                    
-                    <!-- Technology -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                            <i data-feather="cpu" class="text-blue-600 w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Technology Solutions</h3>
-                        <p class="text-gray-600">Innovative tech solutions including software development, IT infrastructure, and digital transformation.</p>
+                        <p class="text-gray-700">Fully licensed and insured transport services</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Transport Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer comprehensive transport solutions tailored to meet your business needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <service-card 
+                    icon="truck"
+                    title="General Haulage"
+                    description="Transportation of general goods across Nigeria with our modern fleet of trucks."
+                ></service-card>
+                
+                <service-card 
+                    icon="package"
+                    title="Container Haulage"
+                    description="Specialized container transportation services for ports and industrial areas."
+                ></service-card>
+                
+                <service-card 
+                    icon="box"
+                    title="Warehouse Distribution"
+                    description="Efficient distribution from warehouses to retail locations nationwide."
+                ></service-card>
+                
+                <service-card 
+                    icon="shield"
+                    title="Secure Transport"
+                    description="High-security transportation for valuable or sensitive goods."
+                ></service-card>
+                
+                <service-card 
+                    icon="clock"
+                    title="Express Delivery"
+                    description="Time-sensitive delivery services for urgent shipments."
+                ></service-card>
+                
+                <service-card 
+                    icon="map"
+                    title="Nationwide Coverage"
+                    description="Comprehensive coverage across all regions of Nigeria."
+                ></service-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Modern Fleet</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Well-maintained vehicles equipped with the latest technology for safe transportation</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://www.facebook.com/share/p/169LCV1ZzM/?mibextid=wwXIfr" alt="Truck Fleet" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-600 mb-2">Heavy Duty Trucks</h3>
+                        <p class="text-gray-700">For large volume and heavy goods transportation</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1716880288871-c15d8519f5b3?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Container Truck" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-600 mb-2">Container Trucks</h3>
+                        <p class="text-gray-700">Specialized for port and industrial container transport</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.clickdealer.co.uk/blog/739/post_images/6bd5e0a2ce65ee485015b039007f8f1a.jpg" alt="Delivery Van" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-600 mb-2">Delivery Vans</h3>
+                        <p class="text-gray-700">For smaller shipments and last-mile deliveries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Contact Section -->
         <section id="contact" class="py-20 bg-white">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
@@ -211,3 +238,4 @@
     </script>
 </body>
 </html>
+
